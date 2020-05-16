@@ -10,7 +10,7 @@ const initialState = {
 export default function cart(state = initialState, action = {}){
 	switch(action.type){
 		case CART_ADD:
-			return handleCartRemove(state, action.payload);
+			return handleCartAdd(state, action.payload);
 		case CART_REMOVE:
 			return handleCartRemove(state, action.payload);
 		default:
@@ -51,8 +51,8 @@ export function removeFromCart(productId){
 	}
 }
 
-export function idInCart(state, props) {
-	return state.cart.item.indexOf(props.id) !== -1; 
+export function isInCart(state, props) {
+	return state.cart.items.indexOf(props.id) !== -1; 
 }
 
 export function getItems(state, props) {

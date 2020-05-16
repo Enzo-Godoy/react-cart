@@ -2,8 +2,7 @@ import React from 'react';
 import Cart from './containers/Cart'; 
 import ProductList from './containers/ProductList'; 
 
-const App = () => 
-{
+const App = () => {
 	return (
 	<div className="container">
 		<div className="row">
@@ -19,7 +18,6 @@ const App = () =>
 			 	<Cart /> 
 			</div>
 		</div>
-
 
 		<footer>
 			<small>

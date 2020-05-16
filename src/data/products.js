@@ -36,7 +36,7 @@ const data = [
 	price: 29.99,
 	currency: 'EUR',
 	image: 'images/06.jpg',
-} 
+ } 
 ];
 
 export default data;

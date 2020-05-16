@@ -10,14 +10,14 @@ class Product extends Component {
 		}	else {
 			addToCart(id);
 		}
-	}
-
+	} 
 	render() {
 		const { name, price, currency, image, isInCart } = this.props ;
 
 		return (
-			<div clasName="product thumbnail">
-				<img src={image} alt="product" /> 
+
+            <div className="product thumbnail">
+				<img src={image} alt="product" />  
 				<div className="caption">
 					<h3>{name}</h3> 
 					<div className="product__price">{price} {currency}</div>
@@ -35,7 +35,7 @@ class Product extends Component {
 }
 
 Product.propTypes = {
-	id: Proptypes.number.isRequired,
+	id: PropTypes.number.isRequired,
 	name: PropTypes.string.isRequired,
 	price: PropTypes.number,
 	currency: PropTypes.string,
