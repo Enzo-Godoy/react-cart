@@ -1,5 +1,5 @@
-import  { connect } form 'react-redux'; 
-import Cart form '../components/Cart';
+import  { connect } from 'react-redux'; 
+import Cart from '../components/Cart';
 import { getItems, getCurrency, getTotal, removeFromCart } from '../ducks/cart';
 
 const mapStateToProps = (state, props) => {

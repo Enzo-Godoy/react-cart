@@ -1,5 +1,4 @@
-import { getProduct } from '../ducjs/Products'; 
-
+import { getProduct } from '../ducks/products'; 
 const CART_ADD = 'cart/ADD';
 const CART_REMOVE = 'cart/REMOVE';
 
@@ -10,9 +9,9 @@ const initialState = {
 
 export default function cart(state = initialState, action = {}){
 	switch(action.type){
-		case CAST_ADD:
+		case CART_ADD:
 			return handleCartRemove(state, action.payload);
-		case CAST_REMOVE:
+		case CART_REMOVE:
 			return handleCartRemove(state, action.payload);
 		default:
 			return state;
@@ -43,7 +42,7 @@ export function addToCart(productId){
 }
 
 
-export function removeToCart(productId){
+export function removeFromCart(productId){
 	return {
 		type: CART_REMOVE,
 		payload: {

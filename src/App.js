@@ -1,22 +1,23 @@
 import React from 'react'; 
-import Cart form './containers/Cart'; 
+import Cart from './containers/Cart'; 
 import ProductList from './containers/ProductList'; 
 
 const App = () => 
 {
 	return (
-		<div className="container">
+	<div className="container">
 		<div className="row">
-	   		<div className="col-md-12"> 
-	    		<h1>Shopping Glasses example</h1> 
+		   		<div className="col-md-12"> 
+		    		<h1>Shopping Glasses example</h1> 
+		    	</div>
 	    	</div>
 		 	<div className="row">
 		  		<div className="col-md-8">
 		   			<ProductList /> 
 		  		</div> 
 			<div className="col-md-4">
-			 		<Cart /> 
-				</div>
+			 	<Cart /> 
+			</div>
 		</div>
 
 

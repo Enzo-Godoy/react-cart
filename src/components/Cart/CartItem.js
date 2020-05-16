@@ -22,5 +22,5 @@ CartItem.propTypes = {
 	onClick: PropTypes.func.isRequired
 }
 
-expor default CartItem;
-}
+export default CartItem;
+ 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { CombineReducers, createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 import cartReducer from './ducks/cart';
-import productsReducer from './data/prodcuts';
+import productsReducer from './data/products';
 import App from './App';
 import productsData from './data/products'; 
-import 'bootstrap/dist/css/bootstrap.'; 
+import 'bootstrap/dist/css/bootstrap.css'; 
 
 const rootReducer = combineReducers ({
 	cart: cartReducer,
@@ -18,7 +18,7 @@ let store = createStore(
 	{
 		products: productsData // initial store values
 	}, 
-	window._REDUX_DEVTOOLS_EXTENSION_ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 
